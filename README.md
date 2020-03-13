@@ -1,3 +1,3 @@
 # Azure Automated ML
 
-![Azure Automated ML](../docs/azure-automl.pdf)
+![Azure Automated ML](./docs/AutoML.pdf)
