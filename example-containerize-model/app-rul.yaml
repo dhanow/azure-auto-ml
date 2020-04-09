@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-rul
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-rul
+  template:
+    metadata:
+      labels:
+        app: app-rul
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: app-rul
+        image: app-rul:1.0
+        ports:
+        - containerPort: 80
+          name: app-rul
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-rul
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: app-rul
