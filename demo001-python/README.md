@@ -20,17 +20,5 @@
 
 ## Open the notebook
 
-Open the `Data Exploration.ipynb` in the ml-basics folder
-
-## Install pandoc to export notebook to pdf
-
-Install pandoc
-
-![](./images/exploredata6.png)
-
-After install restart the kernel
-
-##
-
-
+Open the notebook folder and check out the examples. The same code is available in the "notebook" folder above
 
